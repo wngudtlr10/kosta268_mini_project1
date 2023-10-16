@@ -3,8 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import MyHeader from "./components/MyHeader";
 import Routing from "./Routing";
-
-import Home from "./pages/Home";
+import NotFound from "./errors/NotFound";
+import Home from "./pages/Main/Home";
 import MyCarousel from "./components/MyCarousel";
 
 const reducer = (state, action) => {
