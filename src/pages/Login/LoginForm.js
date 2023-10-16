@@ -17,7 +17,7 @@ function Login() {
     await new Promise((r) => setTimeout(r, 1000)); //Promise를 생성하며, setTimeout을 사용하여 1초 후에 이 Promise를 해결(resolve)
     // alert(JSON.stringify(data));
     console.log(data);
-    alert("제출되었습니다.");
+    alert("로그인 입력값이 제출되었습니다.");
   };
 
   return (
@@ -26,9 +26,7 @@ function Login() {
         <h2 className="login-h2"> 오늘의 봉사 </h2>
 
         <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
-          <label htmlFor="id">아이디</label>
           <input
-            id="id"
             type="text"
             placeholder="id"
             name="id"
@@ -36,16 +34,15 @@ function Login() {
               isSubmitted ? (errors.id ? "true" : "false") : undefined
             }
             {...register("id", {
-              required: "id는 필수 입력입니다.",
+              required: "id는 필수 입력사항입니다.",
               pattern: {
                 value: /^[a-zA-Z0-9]{5,15}$/,
                 message: "아이디는 5~15자의 영숫자로 이루어져야 합니다.",
               },
             })}
           />
-          {errors.id && <span>이름은 필수 입력 항목입니다.</span>}
+          {errors.id && <span>id는 필수 입력 항목입니다.</span>}
 
-          <label htmlFor="password">비밀번호</label>
           <input
             type="password"
             placeholder="password"
@@ -55,7 +52,7 @@ function Login() {
               isSubmitted ? (errors.password ? "true" : "false") : undefined
             }
             {...register("password", {
-              required: "password는 필수 입력입니다.",
+              required: "password는 필수 입력사항입니다.",
               pattern: {
                 value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
                 message:
