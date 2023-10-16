@@ -1,0 +1,162 @@
+{
+  "user": [
+    {
+      "userid": 1,
+      "id": "the4614",
+      "username": "홍길동",
+      "password": "password123",
+      "birthdate": "1990-01-01",
+      "email": "hong@example.com",
+      "gender": "남",
+      "profilePicture": "src/assets/images/profilepicture/people1.jpg"
+    },
+    {
+      "userid": 2,
+      "id": "lee1234",
+      "username": "이순신",
+      "password": "password456",
+      "birthdate": "1985-05-15",
+      "email": "lee@example.com",
+      "gender": "남",
+      "profilePicture": "src/assets/images/profilepicture/people2.jpg"
+    },
+    {
+      "userid": 3,
+      "id": "kim8572",
+      "username": "김유신",
+      "password": "password789",
+      "birthdate": "1982-03-20",
+      "email": "kim@example.com",
+      "gender": "남",
+      "profilePicture": "src/assets/images/profilepicture/people3.jpg"
+    },
+    {
+      "userid": 4,
+      "id": "park2345",
+      "username": "박영희",
+      "password": "password101",
+      "birthdate": "1992-07-10",
+      "email": "park@example.com",
+      "gender": "여",
+      "profilePicture": "src/assets/images/profilepicture/people4.jpg"
+    },
+    {
+      "userid": 5,
+      "id": "choi6789",
+      "username": "최준호",
+      "password": "password112",
+      "birthdate": "1989-11-23",
+      "email": "choi@example.com",
+      "gender": "남",
+      "profilePicture": "src/assets/images/profilepicture/people5.jpg"
+    },
+    {
+      "userid": 6,
+      "id": "jang9012",
+      "username": "장미란",
+      "password": "password134",
+      "birthdate": "1993-08-17",
+      "email": "jang@example.com",
+      "gender": "여",
+      "profilePicture": "src/assets/images/profilepicture/people6.jpg"
+    },
+    {
+      "userid": 7,
+      "id": "kwon3456",
+      "username": "권오준",
+      "password": "password156"
+    }
+  ],
+
+  "post": [
+    {
+      "postid": 1,
+      "category": 1,
+      "content": "첫번째 봉사활동",
+      "date": "2023-10-15 12:00",
+      "location": "상록보육원",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    },
+    {
+      "postid": 2,
+      "category": 5,
+      "content": "두번째 봉사활동",
+      "date": "2023-10-15 12:05",
+      "location": "가평유기동물보호소",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    },
+    {
+      "postid": 3,
+      "category": 4,
+      "content": "세번째 봉사활동",
+      "date": "2023-10-15 12:10",
+      "location": "종로구 평생교육센터",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    },
+    {
+      "postid": 4,
+      "category": 3,
+      "content": "네번째 봉사활동",
+      "date": "2023-10-15 12:15",
+      "location": "노들섬",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    },
+    {
+      "postid": 5,
+      "category": 4,
+      "content": "방과 후 활동 보조 선생님",
+      "date": "2023-10-15 12:20",
+      "location": "구룡초등학교",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    },
+    {
+      "postid": 6,
+      "category": 6,
+      "content": "강릉 안인해변 쓰레기 수거활동",
+      "date": "2023-10-15 12:25",
+      "location": "강릉 안인해변",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    },
+    {
+      "postid": 7,
+      "category": 2,
+      "content": "급식배급 보조활동",
+      "date": "2023-10-15 12:30",
+      "location": "성동구 노인요양센터",
+      "detail": "작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오.작성하시오."
+    }
+  ],
+
+  "comment": [
+    {
+      "username": "홍길동",
+      "content": "이 봉사활동 정말 좋네요!",
+      "postid": 1
+    },
+    {
+      "username": "이순신",
+      "content": "정말 도움이 되었습니다. 감사합니다.",
+      "postid": 2
+    },
+    {
+      "username": "유관순",
+      "content": "다음에도 참여하고 싶네요!",
+      "postid": 3
+    },
+    {
+      "username": "강감찬",
+      "content": "정말 잘 진행된 활동 같아요!",
+      "postid": 4
+    },
+    {
+      "username": "정약용",
+      "content": "다들 수고 많으셨습니다.",
+      "postid": 5
+    },
+    {
+      "username": "신사임당",
+      "content": "다음에도 꼭 참여하려고요.",
+      "postid": 6
+    }
+  ]
+}

@@ -10,6 +10,8 @@ import NotFound from "./errors/NotFound";
 import FindID from "./pages/Login/FindID";
 import FindPW from "./pages/Login/FindPW";
 import MyPage from "./pages/MyPage/MyPage";
+import User from "./pages/User/UserList";
+import UserList from "./pages/User/UserList";
 
 const Routing = () => {
   return (
@@ -30,6 +32,10 @@ const Routing = () => {
           <Route path="/findid" element={<FindID />} />
           <Route path="/findpw" element={<FindPW />} />
           <Route path="/mypage" element={<MyPage />} />
+
+          {/* userlist */}
+          <Route path="/userlist" element={<UserList />} />
+
           {/* 404 NOT FOUND */}
           <Route path="*" element={<NotFound />} />
         </Routes>
