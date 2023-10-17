@@ -13,6 +13,7 @@ import MyPage from "./pages/Main/mypage";
 import UserList from "./pages/User/UserList";
 import Logout from "./pages/Logout/Logout";
 import LogoutForm from "./pages/Logout/LogoutForm";
+import Cart from "./pages/Main/cart";
 
 const Routing = () => {
   return (
@@ -20,12 +21,13 @@ const Routing = () => {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-
           {/* path에 아무것도 없을 때는 Home페이지로 */}
           <Route path="/introduce" element={<Introduce />} />
+          <Route path="/mypage" element={<MyPage />} />
           <Route path="/new" element={<New />} />
-          <Route path="/edit" element={<Edit />} />
-          <Route path="/detail" element={<Detail />} />
+          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/detail/:id" element={<Detail />} />
+          <Route path="/mypage/cart" element={<Cart />} />
 
           {/* 형식: 로그인/회원가입/아이디찾기,비밀번호찾기, 마이페이지, 로그아웃 라우팅 */}
           <Route path="/login" element={<LoginForm />} />

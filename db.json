@@ -1,110 +1,6 @@
 {
   "user": [
     {
-      "id": "the4614",
-      "username": "홍길동",
-      "password": "Password123",
-      "birthdate": "1990-01-01",
-      "email": "hong@example.com",
-      "gender": "남",
-      "profilePicture": "src/assets/images/profilepicture/people1.jpg"
-    },
-    {
-      "id": "lee1234",
-      "username": "이순신",
-      "password": "password456",
-      "birthdate": "1985-05-15",
-      "email": "lee@example.com",
-      "gender": "남",
-      "profilePicture": "src/assets/images/profilepicture/people2.jpg"
-    },
-    {
-      "id": "kim8572",
-      "username": "김유신",
-      "password": "password789",
-      "birthdate": "1982-03-20",
-      "email": "kim@example.com",
-      "gender": "남",
-      "profilePicture": "src/assets/images/profilepicture/people3.jpg"
-    },
-    {
-      "id": "park2345",
-      "username": "박영희",
-      "password": "password101",
-      "birthdate": "1992-07-10",
-      "email": "park@example.com",
-      "gender": "여",
-      "profilePicture": "src/assets/images/profilepicture/people4.jpg"
-    },
-    {
-      "id": "choi6789",
-      "username": "최준호",
-      "password": "password112",
-      "birthdate": "1989-11-23",
-      "email": "choi@example.com",
-      "gender": "남",
-      "profilePicture": "src/assets/images/profilepicture/people5.jpg"
-    },
-    {
-      "id": "jang9012",
-      "username": "장미란",
-      "password": "password134",
-      "birthdate": "1993-08-17",
-      "email": "jang@example.com",
-      "gender": "여",
-      "profilePicture": "src/assets/images/profilepicture/people6.jpg"
-    },
-    {
-      "id": "kwon3456",
-      "username": "권오준",
-      "password": "password156"
-    },
-    {
-      "id": "falled98",
-      "username": "주형식",
-      "password": "Falled98",
-      "email": "wngudtlr10@naver.com"
-    },
-    {
-      "id": "tester",
-      "username": "테스터",
-      "password": "Test1234",
-      "email": "test@naver.com"
-    },
-    {
-      "id": "test1",
-      "username": "테스터야",
-      "password": "Test1234",
-      "email": "fwfww@naver.com"
-    },
-    {
-      "id": "1232314",
-      "username": "주형식",
-      "password": "Falled98",
-      "email": "wngudtlr10@naver.com"
-    },
-    {
-      "userid": "wngudtlr10",
-      "username": "주형식",
-      "password": "Falled9845",
-      "email": "wngudtlr10@naver.com",
-      "id": "IQIkb6T"
-    },
-    {
-      "userid": "wngudtlr10",
-      "username": "주형식",
-      "password": "Falled98",
-      "email": "wngudtlr10@naver.com",
-      "id": "XiRDz6d"
-    },
-    {
-      "userid": "12345",
-      "username": "주형식",
-      "password": "Falled98",
-      "email": "wngudtlr10@naver.com",
-      "id": "QeKI2ez"
-    },
-    {
       "userid": "123456",
       "username": "테스트",
       "password": "Falled1324",
@@ -187,6 +83,27 @@
       "password": "Falled9845",
       "email": "wngudtlr10@naver.com",
       "id": "KqphF9t"
+    },
+    {
+      "userid": "wngudtlr10",
+      "username": "주형식",
+      "password": "Falled9845",
+      "email": "wngudtlr10@naver.com",
+      "id": "bF_lwXC"
+    },
+    {
+      "userid": "test1234",
+      "username": "주형식",
+      "password": "Test1234",
+      "email": "wngudtlr10@naver.com",
+      "id": "bF_lwXC"
+    },
+    {
+      "userid": "the4614",
+      "username": "주형식",
+      "password": "Falled9845",
+      "email": "wngudtlr10@naver.com",
+      "id": "cpSRKMd"
     }
   ],
   "post": [
