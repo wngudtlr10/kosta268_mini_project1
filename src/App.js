@@ -1,6 +1,6 @@
 import React, { useReducer, useRef } from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MyHeader from "./components/MyHeader";
 import Routing from "./Routing";
 import NotFound from "./errors/NotFound";

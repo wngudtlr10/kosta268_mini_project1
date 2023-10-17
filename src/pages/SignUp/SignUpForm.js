@@ -1,23 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import "./SignUpForm.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import "../../errors/NotFound.js";
 
 const SignUp = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { isSubmitting, isSubmitted, errors }, //중복 방지
   } = useForm();
 
-  const onSubmit = async (data) => {
-    //비동기함수
-    await new Promise((r) => setTimeout(r, 1000)); //Promise를 생성하며, setTimeout을 사용하여 1초 후에 이 Promise를 해결(resolve)
-    // alert(JSON.stringify(data));
-    console.log(data);
-    alert("회원가입 입력값이 제출되었습니다.");
+  const navigate = useNavigate();
+  const [userid, setUserid] = useState();
+  const [username, setUsername] = useState();
+  const [password, setPassword] = useState();
+  const [email, setEmail] = useState();
+
+  const onSubmit = async (formData) => {
+    try {
+      const response = await axios.post("http://localhost:3000/user", formData);
+      if (
+        response &&
+        response.formData &&
+        typeof response.formData === "object"
+      ) {
+        const { userid, username, password, email } = response.formData;
+        // ... rest of your code
+      }
+
+      alert("회원가입 성공!");
+      console.log(formData);
+      navigate("/login"); //로그인 페이지로 리다이렉트
+    } catch (error) {
+      console.error("Error during signup:", error);
+      alert("회원가입 실패 폼 내용을 초기화합니다.");
+      console.log(formData);
+      reset(); //회원가입폼 초기화
+    }
   };
 
   return (
@@ -28,9 +52,10 @@ const SignUp = () => {
         <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
-            placeholder="Id"
-            name="id"
-            {...register("id", {
+            placeholder="userId"
+            name="userid"
+            onChange={(e) => setUserid(e.target.value)}
+            {...register("userid", {
               required: "id는 필수 입력사항입니다.",
               pattern: {
                 value: /^[a-zA-Z0-9]{5,15}$/,
@@ -44,6 +69,7 @@ const SignUp = () => {
             type="text"
             placeholder="username"
             name="username"
+            onChange={(e) => setUsername(e.target.value)}
             aria-Invalid={
               //submit -> password가 유효성검사 통과했을 때 비활성화 제출
               isSubmitted ? (errors.uesrname ? "true" : "false") : undefined
@@ -62,6 +88,7 @@ const SignUp = () => {
             type="password"
             placeholder="password"
             name="password"
+            onChange={(e) => setPassword(e.target.value)}
             aria-Invalid={
               //submit -> password가 유효성검사 통과했을 때 비활성화 제출
               isSubmitted ? (errors.password ? "true" : "false") : undefined
@@ -77,7 +104,7 @@ const SignUp = () => {
           />
           {errors.password && <span>비밀번호는 필수 입력 항목입니다.</span>}
 
-          <input
+          {/* <input
             type="date"
             placeholder="0000-00-00"
             name="birthdate"
@@ -93,12 +120,13 @@ const SignUp = () => {
               },
             })}
           />
-          {errors.birthdate && <span>{errors.birthdate.message}</span>}
+          {errors.birthdate && <span>{errors.birthdate.message}</span>} */}
 
           <input
             type="email"
             placeholder="email@test.com"
             name="email"
+            onChange={(e) => setEmail(e.target.value)}
             aria-Invalid={
               //submit -> password가 유효성검사 통과했을 때 비활성화 제출
               isSubmitted ? (errors.email ? "true" : "false") : undefined

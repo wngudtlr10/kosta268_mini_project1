@@ -10,7 +10,7 @@ import NotFound from "./errors/NotFound";
 import FindID from "./pages/Login/FindID";
 import FindPW from "./pages/Login/FindPW";
 import MyPage from "./pages/MyPage/MyPage";
-import User from "./pages/User/UserList";
+import Login from "./pages/Login/LoginForm";
 import UserList from "./pages/User/UserList";
 
 const Routing = () => {
