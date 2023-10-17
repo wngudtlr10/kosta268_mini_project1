@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../../errors/NotFound.js";
 
-function Login() {
+function Login({ onLogin }) {
   const {
     register,
     handleSubmit,
@@ -30,6 +30,7 @@ function Login() {
         if (user.password === password) {
           alert("로그인 성공!");
           navigate("/");
+          onLogin(true);
         } else {
           alert("로그인 실패! 비밀번호가 일치하지 않습니다.");
           console.log(data);

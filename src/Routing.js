@@ -9,9 +9,10 @@ import SignUpForm from "./pages/SignUp/SignUpForm";
 import NotFound from "./errors/NotFound";
 import FindID from "./pages/Login/FindID";
 import FindPW from "./pages/Login/FindPW";
-import MyPage from "./pages/MyPage/MyPage";
-import Login from "./pages/Login/LoginForm";
+import MyPage from "./pages/Main/mypage";
 import UserList from "./pages/User/UserList";
+import Logout from "./pages/Logout/Logout";
+import LogoutForm from "./pages/Logout/LogoutForm";
 
 const Routing = () => {
   return (
@@ -26,14 +27,15 @@ const Routing = () => {
           <Route path="/edit" element={<Edit />} />
           <Route path="/detail" element={<Detail />} />
 
-          {/* 형식: 로그인/회원가입/아이디찾기,비밀번호찾기, 마이페이지 라우팅 */}
+          {/* 형식: 로그인/회원가입/아이디찾기,비밀번호찾기, 마이페이지, 로그아웃 라우팅 */}
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignUpForm />} />
           <Route path="/findid" element={<FindID />} />
           <Route path="/findpw" element={<FindPW />} />
-          <Route path="/mypage" element={<MyPage />} />
 
-          {/* userlist */}
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/logoutform" element={<LogoutForm />} />
+
           <Route path="/userlist" element={<UserList />} />
 
           {/* 404 NOT FOUND */}
